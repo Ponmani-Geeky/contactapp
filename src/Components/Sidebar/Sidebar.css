@@ -1,0 +1,10 @@
+.MuiDrawer-paper {
+  width: 35px !important;
+  background: linear-gradient(rgb(255, 199, 96), rgb(255, 150, 167));
+}
+
+@media only screen and (min-width: 700px) {
+  .MuiDrawer-paper {
+    width: 45px !important;
+  }
+}

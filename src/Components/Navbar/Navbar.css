@@ -1,0 +1,45 @@
+.navbar {
+  margin-left: 37px;
+}
+
+.MuiToolbar-root {
+  justify-content: flex-end !important;
+}
+
+.user {
+  padding: 5px;
+  color: black;
+  border-radius: 10px;
+}
+
+.user:hover {
+  cursor: pointer;
+  background-color: cornsilk;
+}
+
+.MuiAppBar-colorPrimary {
+  background-color: white !important;
+}
+
+.userlist {
+  z-index: 3000;
+  color: black;
+  position: absolute;
+  background-color: lightblue;
+  top: 39px;
+  right: 0;
+  width: 335px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.userlist > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.userlist > ul > li {
+  list-style: none;
+  margin: 5px;
+  cursor: pointer;
+}

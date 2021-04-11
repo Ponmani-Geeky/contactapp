@@ -1,0 +1,26 @@
+.contactinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gainsboro;
+  padding: 7px;
+  margin-top: 5px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.userinfo {
+  display: grid;
+  grid-template-columns: 35% 10%;
+}
+
+.infodetail > p {
+  margin: 22px;
+}
+
+@media only screen and (min-width: 700px) {
+  .contactinfo {
+    transform: translateX(-114px);
+    width: 407px;
+  }
+}

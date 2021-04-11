@@ -1,0 +1,75 @@
+.contaclist {
+  margin-left: 39px;
+  width: 84vw;
+  max-width: 400px;
+}
+
+.infohead {
+  display: flex;
+  margin: 5px;
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(245, 245, 245);
+}
+
+.displaycontact {
+  display: grid;
+  grid-template-columns: 0fr 2fr 1fr;
+  align-items: center;
+  padding: 5px;
+}
+
+.displaycontact:hover {
+  background: gainsboro;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.basicinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.MuiAvatar-root {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.chat {
+  transform: translateY(10px) !important;
+}
+
+.diplayposition {
+  display: flex;
+  flex-direction: column;
+  width: 84vw;
+}
+
+@media only screen and (min-width: 700px) {
+  .basicinfo {
+    flex: 1;
+  }
+  .diplayposition {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contaclist {
+    margin-left: 180px;
+    margin-top: 50px;
+  }
+
+  .displaycontact {
+    grid-template-columns: 0.4fr 1fr 1fr;
+  }
+}

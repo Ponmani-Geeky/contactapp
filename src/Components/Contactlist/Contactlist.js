@@ -1,10 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
-import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
 import "./Contactlist.css";
-import { makeStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
-import { deepOrange, deepPurple } from "@material-ui/core/colors";
 import Contactinfo from "../Contactinfo/Contactinfo";
 import ChatIcon from "@material-ui/icons/Chat";
 import Contactchat from "../Contactchat/Contactchat";
@@ -35,7 +31,7 @@ const usersObj = [
 ];
 
 const Contactlist = () => {
-  const [{ user }, dispatch] = useContext(Userlogcontext);
+  const [{ user }] = useContext(Userlogcontext);
   const [userinfo, setUserinfo] = useState();
   const [displaychat, setDisplayChat] = useState(false);
   const [display, setDisplay] = useState();

@@ -1,5 +1,4 @@
 import React from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
 import PersonOutlineIcon from "@material-ui/icons/PersonOutline";
 import Drawer from "@material-ui/core/Drawer";
 import "./Sidebar.css";

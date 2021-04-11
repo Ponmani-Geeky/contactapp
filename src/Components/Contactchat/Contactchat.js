@@ -6,7 +6,7 @@ import { actionTypes } from "../Context/Messagereducer";
 
 const Contactchat = ({ chatuser }) => {
   let key = 0;
-  const [{ user }, dispatch] = useContext(Userlogcontext);
+  const [{ user }] = useContext(Userlogcontext);
   const [{ messages }, dispatched] = useContext(Messagecontext);
   const [textMessage, setTextMessage] = useState("");
 
@@ -84,13 +84,13 @@ const Contactchat = ({ chatuser }) => {
         <>
           <div key={key++} className="messagess">
             {" "}
-            {message.name == user && (
+            {message.name === user && (
               <div className="message">{message?.chats[chatuser]?.map((msg)=>(<p>{msg}</p>))}</div>
             )}
           </div>
           <div key={key++} className="messagess">
           {" "}
-          {message.name == chatuser && (
+          {message.name === chatuser && (
             <div className="message">{message?.chats[user]?.map((msg)=>(<p>{msg}</p>))}</div>
           )}
         </div>

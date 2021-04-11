@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 const users = [{ name: "ponmani" }, { name: "kamal" }, { name: "vijay" }];
 function Navbar() {
   const [{ user }, dispatch] = useContext(Userlogcontext);
-  const classes = useStyles();
+  
 
   const [showuser, setShowUser] = React.useState(false);
 

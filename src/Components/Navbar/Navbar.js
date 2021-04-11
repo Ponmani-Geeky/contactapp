@@ -1,22 +1,11 @@
 import React, { useContext } from "react";
 import AppBar from "@material-ui/core/AppBar";
-import { makeStyles } from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar";
 import "./Navbar.css";
 import { Userlogcontext } from "../Context/Usercontext";
 import { actionTypes } from "../Context/Reduceruser";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
-}));
+
 
 const users = [{ name: "ponmani" }, { name: "kamal" }, { name: "vijay" }];
 function Navbar() {

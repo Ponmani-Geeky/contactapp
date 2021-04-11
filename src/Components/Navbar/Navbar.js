@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const users = [{ name: "ponmani" }, { name: "kamalesh" }, { name: "vijay" }];
+const users = [{ name: "ponmani" }, { name: "kamal" }, { name: "vijay" }];
 function Navbar() {
   const [{ user }, dispatch] = useContext(Userlogcontext);
   const classes = useStyles();
@@ -43,9 +43,9 @@ function Navbar() {
     <div className="navbar">
       <AppBar position="static">
         <Toolbar>
-          <h4 className="user" onClick={handleUser}>
+          <h2 className="user" onClick={handleUser}>
             {user ? user : users[0].name}
-          </h4>
+          </h2>
           {showuser ? (
             <div className="userlist">
               {users.map((user) => (

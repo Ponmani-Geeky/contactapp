@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 .userchat {
   background-color: lightgrey;
   width: 100%;
@@ -23,21 +24,46 @@
   height: 46px;
   flex: 1;
   margin-top: 7px;
+  overflow: scroll;
 }
 
 .sendbtn {
   padding: 10px;
 }
 
+.chathead{
+  background-color: skyblue;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: 'Lobster', cursive;
+  color: forestgreen;
+  letter-spacing: 3px;
+}
+
 .message {
-  position: absolute;
   display: block;
+  position: relative;
+}
+
+span{
+  position: absolute;
+  left: 21px;
+  top: -15px;
+}
+
+.message p{
+  margin: 11px;
+  padding: 8px;
+  background-color: skyblue;
+  border-radius: 10px;
+  width: 80px;
 }
 
 @media only screen and (min-width: 700px) {
   .userchat {
     width: 32%;
-    transform: translateX(-140px);
+    transform: translate(-140px,-140px);
+    height: 500px;
   }
 
   .sendbtn {

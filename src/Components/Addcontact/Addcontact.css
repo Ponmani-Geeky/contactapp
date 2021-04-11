@@ -5,7 +5,7 @@
 .contacthead {
   display: flex;
   margin: 10px;
-  align-items: baseline;
+  align-items: center;
 }
 
 .search {

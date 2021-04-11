@@ -3,6 +3,11 @@
   background: linear-gradient(rgb(255, 199, 96), rgb(255, 150, 167));
 }
 
+.icon{
+transform: translate(4px,69px) !important;
+color: seagreen !important;
+}
+
 @media only screen and (min-width: 700px) {
   .MuiDrawer-paper {
     width: 45px !important;

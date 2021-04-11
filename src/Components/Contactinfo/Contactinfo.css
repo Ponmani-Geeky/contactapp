@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
 .contactinfo {
   display: flex;
   flex-direction: column;
@@ -14,13 +15,30 @@
   grid-template-columns: 35% 10%;
 }
 
+.avatar{
+  background-color: rgb(209, 209, 51) !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.left{
+  color: gray;
+}
+
+.info_head{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
 .infodetail > p {
   margin: 22px;
+  font-family: 'Noto Serif JP', serif;
 }
 
 @media only screen and (min-width: 700px) {
   .contactinfo {
-    transform: translateX(-114px);
+    transform: translate(-140px,-140px);
     width: 407px;
   }
 }

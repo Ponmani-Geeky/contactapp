@@ -19,14 +19,14 @@ const usersObj = [
     address: "vellore",
   },
   {
-    name: "kamlesh",
-    email: "Suresh345@gmail.com",
+    name: "kamal",
+    email: "kamal345@gmail.com",
     mobile: "9522244230",
     company: "doodleblue",
     address: "chennai",
   },
   {
-    name: "Vijay",
+    name: "vijay",
     email: "Vijay123@gmail.com",
     mobile: "9555244230",
     company: "doodleblue",
@@ -41,7 +41,10 @@ const Contactlist = () => {
   const [display, setDisplay] = useState();
   const [chatUser, setChatUser] = useState();
 
+  
+
   useEffect(() => {
+    setDisplayChat(false);
     setDisplay(
       usersObj
         .filter((userx) => {
@@ -53,7 +56,7 @@ const Contactlist = () => {
             className="displaycontact"
             onClick={() => handleContact(userx)}
           >
-            <Avatar>P</Avatar>
+            <Avatar className='listcontact'>{userx.name.slice(0,1).toUpperCase()}</Avatar>
             <div className="basicinfo">
               <p>
                 {userx.name}{" "}
@@ -79,6 +82,10 @@ const Contactlist = () => {
     setChatUser(name);
   };
 
+  const handleBack=()=>{
+    setDisplayChat(false);
+  }
+
   return (
     <div className="contaclist">
       <div className="infohead">
@@ -88,7 +95,10 @@ const Contactlist = () => {
       <div className="diplayposition">
         <div>{display}</div>
         {displaychat ? (
+          <>
+          <button onClick={handleBack} className="backbtn">Back</button>
           <Contactchat chatuser={chatUser} />
+          </>
         ) : (
           <div>
             <Contactinfo currentuser={userinfo ? userinfo : usersObj[0]} />

@@ -8,7 +8,7 @@ function Sidebar() {
   return (
     <div>
       <Drawer variant="permanent">
-        <PersonOutlineIcon />
+        <PersonOutlineIcon  className='icon'/>
       </Drawer>
     </div>
   );
